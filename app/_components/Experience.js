@@ -17,7 +17,7 @@ const ExperienceSection = ({ data }) => {
 export default ExperienceSection;
 
 const ExperienceSlides = ({ data }) => {
-  const { role, company, duration, responsibilites, logo } = data;
+  const { role, company, duration, responsibilites } = data;
   return (
     <>
       <div className="flex flex-col p-1 lg:mx-1 sm:mx-auto text-center rounded-lg border shadow border-gray-600 xl:p-8 text-white bg-orange-400">
