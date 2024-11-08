@@ -7,7 +7,7 @@ const getLandingPageData = async () => {
   const version = process.env.SB_DATA_VERSION;
   const token = process.env.SB_TOKEN;
   const url = `https://api.storyblok.com/v2/cdn/stories/landing-page?version=${version}&token=${token}`;
-  let req = await fetch(url, { next: { revalidate: 10 } });
+  const req = await fetch(url, { next: { revalidate: 10 } });
 
   const storyData = await req.json();
   const {
